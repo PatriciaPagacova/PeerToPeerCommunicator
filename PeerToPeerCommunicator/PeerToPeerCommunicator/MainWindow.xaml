@@ -1,0 +1,27 @@
+﻿<Window x:Class="PeerToPeerCommunicator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PeerToPeerCommunicator"
+        mc:Ignorable="d"
+        Title="Communicator" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="TxtRemoteIPAddress" HorizontalAlignment="Left" Height="23" Margin="638,23,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtRemotePort" HorizontalAlignment="Left" Height="23" Margin="638,53,0,0" TextWrapping="Wrap" Text="10000" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtLocalPort" HorizontalAlignment="Left" Height="23" Margin="98,30,0,0" TextWrapping="Wrap" Text="10001" VerticalAlignment="Top" Width="120"/>
+        <Label Content= "Local port" HorizontalAlignment="Left" Margin="31,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Receiver's port" HorizontalAlignment="Left" Margin="545,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.837,-1.906"/>
+        <Label Content="Receiver's IP address" HorizontalAlignment="Left" Margin="513,19,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnStart" Content="Start receiving messages" HorizontalAlignment="Left" Margin="234,29,0,0" VerticalAlignment="Top" Width="145" Click="BtnStart_Click"/>
+        <Button x:Name="BtnStop" Content="Stop receiving messages" HorizontalAlignment="Left" Margin="234,56,0,0" VerticalAlignment="Top" Width="145" Click="BtnStop_Click" IsEnabled="False"/>
+        <TextBox x:Name="TxtMessagePanel" HorizontalAlignment="Left" Height="217" Margin="59,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="620" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" IsReadOnly="True" />
+        <TextBox x:Name="TxtNewMessage" HorizontalAlignment="Left" Height="19" Margin="58,359,0,0" VerticalAlignment="Top" Width="622" KeyDown="TxtNewMessage_KeyDown" TextChanged="TxtNewMessage_TextChanged"/>
+        <Button x:Name="BtnSend" Content="Send" HorizontalAlignment="Left" Margin="699,359,0,0" VerticalAlignment="Top" Width="75" Click="BtnSend_Click"/>
+        <TextBox x:Name="TxtUserName" HorizontalAlignment="Left" Height="23" Margin="59,107,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.09,0.522"/>
+        <Label Content= "Your user name" HorizontalAlignment="Left" Margin="57,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.746,5.281"/>
+        <TextBox x:Name="TxtPathToFile" HorizontalAlignment="Left" Height="19" Margin="58,391,0,0" VerticalAlignment="Top" Width="622" TextChanged="TxtPathToFile_TextChanged"/>
+        <Button x:Name="BtnAddFile" Content="Add file" HorizontalAlignment="Left" Margin="699,391,0,0" VerticalAlignment="Top" Width="75" Click="BtnAddFile_Click" />
+
+    </Grid>
+</Window>
