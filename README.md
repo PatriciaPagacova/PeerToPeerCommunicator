@@ -10,4 +10,6 @@ Simple peer-to-peer network communicator with support for sending of binary file
 - XML serialization
 - Base64 coding
 
-![](images/PeerToPeerCommunicator.gif)
+<img src="images/PeerToPeerCommunicator.gif" alt="PeerToPeerCommunicator" width="70%"/>
+
+
