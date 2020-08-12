@@ -4,7 +4,7 @@
 Simple peer-to-peer network communicator with support for sending of binary files.
 
 ## Technology stack
-- C#
+- C# 
 - WPF
 - TCP communication
 - XML serialization
